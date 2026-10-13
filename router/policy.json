@@ -1,0 +1,107 @@
+{
+  "version": "2026-10",
+  "jev_prompt": {
+    "path": "jev_prompt.json",
+    "sha256": "e73a2f98e7b9f8c3b117a5d4d1baed939b635e83caeadf93f31b39552c0f27cd",
+    "dimension": "task_class",
+    "selection": "argmax of the returned probabilities (Jev's choice when no probabilities are returned)"
+  },
+  "classes": {
+    "math_proof": {
+      "kind": "direct",
+      "primary": "kimi-k3",
+      "long_context": "kimi-k3"
+    },
+    "math_answer": {
+      "kind": "direct",
+      "primary": "deepseek-v4.1-flash",
+      "long_context": "kimi-k3"
+    },
+    "science_advanced": {
+      "kind": "direct",
+      "primary": "kimi-k3",
+      "long_context": "kimi-k3"
+    },
+    "science_basic": {
+      "kind": "direct",
+      "primary": "deepseek-v4.1-flash",
+      "long_context": "kimi-k3"
+    },
+    "humanities_expert": {
+      "kind": "direct",
+      "primary": "kimi-k3",
+      "long_context": "kimi-k3"
+    },
+    "coding_direct": {
+      "kind": "direct",
+      "primary": "deepseek-v4.1-flash",
+      "long_context": "kimi-k3"
+    },
+    "text_transformation": {
+      "kind": "direct",
+      "primary": "deepseek-v4.1-flash",
+      "long_context": "kimi-k3"
+    },
+    "text_reasoning": {
+      "kind": "direct",
+      "primary": "kimi-k3",
+      "long_context": "kimi-k3"
+    },
+    "logic_puzzle": {
+      "kind": "direct",
+      "primary": "deepseek-v4.1-flash",
+      "long_context": "kimi-k3"
+    },
+    "writing_creative": {
+      "kind": "direct",
+      "primary": "deepseek-v4.1-flash",
+      "long_context": "kimi-k3"
+    },
+    "data_analysis_direct": {
+      "kind": "direct",
+      "primary": "deepseek-v4.1-flash",
+      "long_context": "deepseek-v4-flash-0731"
+    },
+    "general_direct": {
+      "kind": "direct",
+      "primary": "deepseek-v4.1-flash",
+      "long_context": "kimi-k3"
+    },
+    "coding_agent": {
+      "kind": "agent",
+      "primary": "kimi-k3",
+      "long_context": "kimi-k3"
+    },
+    "research_agent": {
+      "kind": "agent",
+      "primary": "glm-5.3-flash",
+      "long_context": "kimi-k3"
+    },
+    "workflow_agent": {
+      "kind": "agent",
+      "primary": "deepseek-v4.1-flash",
+      "long_context": "kimi-k3"
+    },
+    "service_agent": {
+      "kind": "agent",
+      "primary": "glm-5.3",
+      "long_context": "kimi-k3"
+    }
+  },
+  "long_context_next": {
+    "deepseek-v4-flash-0731": "kimi-k3"
+  },
+  "handoff": {
+    "model": "kimi-k3",
+    "kinds": [
+      "direct"
+    ],
+    "triggers": [
+      "empty",
+      "length",
+      "error"
+    ]
+  },
+  "jev_failure_model": "kimi-k3",
+  "sampling": "Routed requests drop the client's temperature and top_p, so every model runs at its provider's default sampling."
+}

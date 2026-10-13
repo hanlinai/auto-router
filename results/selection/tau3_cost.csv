@@ -1,0 +1,7 @@
+model,cost_usd_per_task
+deepseek-v4.1-flash,0.0653276797
+deepseek-v4-flash-0731,0.0280516507
+kimi-k3,0.337926248
+glm-5.3-flash,0.0491299547
+glm-5.3,0.180844432
+qwen3.8-27b,0.031394656

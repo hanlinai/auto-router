@@ -1,0 +1,8 @@
+arm,tasks,total_cost_usd
+auto,100,4.62825748
+kimi-k3,100,7.14262
+deepseek-v4.1-flash,100,0.335332
+glm-5.3,100,4.71936
+glm-5.3-flash,100,0.658708
+qwen3.8-27b,100,0.598964
+deepseek-v4-flash-0731,100,0.239111
